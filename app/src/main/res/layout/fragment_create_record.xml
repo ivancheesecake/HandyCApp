@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-thin">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_addrecord"
+            android:fontFamily="sans-serif-thin"
+            android:textAlignment="center"
+            android:textSize="36dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#cccccc" />
+
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_height="wrap_content"
+            android:hint="@string/latitude_notset"
+            android:inputType="numberDecimal"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_height="wrap_content"
+            android:hint="@string/longitude_notset"
+            android:inputType="numberDecimal"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/requestLocation"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:hint="@string/requestLocation"
+            android:fontFamily="sans-serif-thin"/>
+
+        <EditText
+            android:id="@+id/riverBasin"
+            android:layout_height="wrap_content"
+            android:hint="@string/riverBasin"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/buildingName"
+            android:layout_height="wrap_content"
+            android:hint="@string/buildingName"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <Spinner
+            android:id="@+id/buildingUse"
+            android:layout_height="wrap_content"
+            android:prompt="@string/buildingUse"
+            android:layout_width="fill_parent"
+            android:entries="@array/buildingUseArray"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+
+            >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/barangay"
+            android:layout_height="wrap_content"
+            android:hint="@string/barangay"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/municipality"
+            android:layout_height="wrap_content"
+            android:hint="@string/municipality"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <!--<EditText-->
+            <!--android:id="@+id/province"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="@string/province"-->
+            <!--android:inputType="textCapWords"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="5dp"-->
+            <!--android:fontFamily="sans-serif-thin"-->
+            <!--&gt;-->
+        <!--</EditText>-->
+
+        <Spinner
+            android:id="@+id/province"
+            android:layout_height="wrap_content"
+            android:prompt="@string/province"
+            android:layout_width="fill_parent"
+            android:entries="@array/provinceArray"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+
+            >
+        </Spinner>
+
+        <EditText
+            android:id="@+id/events"
+            android:layout_height="wrap_content"
+            android:hint="@string/events"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/dateOccurrence"
+            android:layout_height="wrap_content"
+            android:hint="@string/dateOccurrence"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/timeOccurrence"
+            android:layout_height="wrap_content"
+            android:hint="@string/timeOccurrence"
+            android:inputType="textCapWords"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <EditText
+            android:id="@+id/floodDepth"
+            android:layout_height="wrap_content"
+            android:hint="@string/floodDepth"
+            android:inputType="numberDecimal"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-thin"
+            >
+        </EditText>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:hint="@string/save"
+            android:fontFamily="sans-serif-thin"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/colorAccent"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:state_enabled="true"
+            android:onClick="saveRecord"
+            />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="buildingUseArray">
+        <item>@string/residential</item>
+        <item>@string/school</item>
+        <item>@string/brgyhall</item>
+        <item>@string/religious</item>
+        <item>@string/apartment</item>
+        <item>@string/commercial</item>
+        <item>@string/others</item>
+    </string-array>
+
+    <string-array name="provinceArray">
+        <item>@string/laguna</item>
+        <item>@string/ormin</item>
+        <item>@string/occmin</item>
+        <item>@string/marinduque</item>
+        <item>@string/romblon</item>
+        <item>@string/palawan</item>
+
+    </string-array>
+
+
+</resources>
